@@ -7,26 +7,97 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs ">
-        <div class="page-header d-flex align-items-center" style="background-image: url('../static/img/9.jpg');">
-          <div class="container position-relative">
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6 text-center">
-                <h2>Portfolio</h2>
-                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-              </div>
+      <div class="page-header d-flex align-items-center" style="background-image: url('../static/img/9.jpg');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Portfolio</h2>
+              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
             </div>
           </div>
         </div>
-        <nav>
-          <div class="container">
-            <ol>
-              <li><a href="{% url 'home' %}">Accueil</a></li>
-              <li>Portfolio</li>
-            </ol>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'home' %}">Accueil</a></li>
+            <li>Portfolio</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/dir//Nomayos+Nbankomo,+Yaound%C3%A9/@3.78541,11.4023039,13z/data=!3m1!5s0x89c25a2290b20107:0x277ceb33ca00e11e!4m8!4m7!1m0!1m5!1m1!1s0x108bd147d7c1acd3:0x63397e4f99596cfd!2m2!1d11.443504!2d3.785411?entry=ttu" frameborder="0" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>A108 Nomayos, Yaoundé, Yde 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>davidngoue@beyond.cm</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>+237 655 10 38 13</p>
+              </div>
+            </div><!-- End Info Item -->
+
           </div>
-        </nav>
-      </div><!-- End Breadcrumbs -->
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
     
+  
+
+
     </main>
   
 
