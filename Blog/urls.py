@@ -8,4 +8,5 @@ urlpatterns = [
     path('portfolio/', portfolio, name="portfolio"),
     path('code/', code, name="code"),
     path('contribution/', contribution, name="contribution"),
+    path('login/', login, name="login"),
 ]

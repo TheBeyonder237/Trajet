@@ -17,3 +17,6 @@ def portfolio(request):
 
 def contribution(request):
     return render(request, "contribution.html")
+
+def login(request):
+    return render(request, "partial/login.html")
