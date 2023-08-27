@@ -5,29 +5,60 @@
 
 <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs ">
-        <div class="page-header d-flex align-items-center" style="background-image: url('../static/img/6.jpg');">
-          <div class="container position-relative">
-            <div class="row d-flex justify-content-center">
-              <div class="col-lg-6 text-center">
-                <h2>Démo</h2>
-                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-              </div>
-            </div>
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs ">
+    <div class="page-header d-flex align-items-center" style="background-image: url('../static/img/6.jpg');">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Démo</h2>
+            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
           </div>
         </div>
-        <nav>
-          <div class="container">
-            <ol>
-              <li><a href="{% url 'home' %}">Accueil</a></li>
-              <li>Démo</li>
-            </ol>
-          </div>
-        </nav>
-      </div><!-- End Breadcrumbs -->
-    
-    </main>
-    
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <ol>
+          <li><a href="{% url 'home' %}">Accueil</a></li>
+          <li>Démo</li>
+        </ol>
+      </div>
+    </nav>
+  </div><!-- End Breadcrumbs -->
+
+  <section class="demo align-content-center">
+    <div class="container-fluid">
+      <div class="row">
+        <h2>Démonstration de l'application des modèles</h2>
+        <br>
+      </div>
+      <div class="row d-flex">
+        <div class="col-lg-6 order-1 order-lg-2">
+          <video controls="controls" volume="0.7" autoplay  width="480px" height="auto" >
+            <source src="../static/videos/project_video_1.mp4" type="video/mp4 ">
+          </video>
+        </div>
+
+        <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-left">
+          
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-lg-6 order-1 order-lg-2">
+          <video controls="controls" volume="0.7" autoplay >
+            <source src="../static/videos/object-detection-test2.mp4" type="video/mp4" width="480px" height="auto">
+          </video>
+        </div>
+
+        <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-around">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
 
 {% endblock  %}
