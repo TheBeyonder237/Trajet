@@ -20,3 +20,7 @@ def contribution(request):
 
 def login(request):
     return render(request, "partial/login.html")
+
+
+def landing(request):
+    return render(request, "landing.html")
